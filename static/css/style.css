@@ -1,0 +1,371 @@
+@font-face {
+    font-family: 'SF UI Display Regular';
+    src: url('../fonts/ofont.ru_SF UI Display.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'SF UI Display Semibold';
+    src: url('../fonts/SF-UI-Display-Semibold.ttf');
+}
+
+@font-face {
+    font-family: 'New York Extra Large Bold';
+    src: url('../fonts/NewYorkExtraLargeBold.otf');
+    font-weight: bold;
+}
+
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+    list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article>*+* {
+    margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 10px;
+    max-width: 1400px;
+    width: 100%;
+}
+
+.header {
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    display: flex;
+    margin-right: 20px;
+}
+
+.nav-link {
+    margin: 4px 24px;
+    font-family: 'SF UI Display Regular';
+    font-size: 14px;
+    text-decoration: none;
+    color: #000;
+}
+
+.search {
+    display: flex;
+    margin-right: 20px;
+}
+
+.sign {
+    margin-right: 20px;
+    font-family: 'SF UI Display Regular';
+    text-decoration: none;
+    color: #000;
+}
+
+.btn {
+    border-color: #fff;
+    font-family: 'SF UI Display Semibold';
+    cursor: pointer;
+    color: #fff;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    width: 99px;
+    height: 48px;
+    background-color: #FD665E;
+}
+
+.btn:active {
+    background-color: #c75751;
+}
+
+.hero {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-image {
+    max-width: 765px;
+}
+
+.build-text {
+    font-family: 'New York Extra Large Bold';
+    line-height: 120px;
+    font-size: 112px;
+}
+
+span.colortext {
+    color: #FD665E;
+}
+
+.desc-text {
+    margin-top: 56px;
+    font-family: "SF UI Display Regular";
+    width: 50%;
+    font-size: 16px;
+    line-height: 25.6px;
+}
+
+button.cons {
+    margin-top: 48px;
+    border-color: #fff;
+    font-family: 'SF UI Display Semibold';
+    cursor: pointer;
+    color: #fff;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    width: 179px;
+    height: 56px;
+    background-color: #FD665E;
+    padding: 8px 32px;
+}
+
+button.cons:active {
+    background-color: #c75751;
+}
+
+.hero-2 {
+    margin-top: 100px;
+    width: 100%;
+}
+
+.hero-2-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero-2-title {
+    font-family: 'New York Extra Large';
+    font-weight: 700;
+    font-size: 48px;
+    width: 40%;
+}
+
+.slider {
+    max-width: 385px;
+}
+
+.slider__wrapper {
+    overflow: hidden;
+}
+
+.slider__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.needs {
+    width: 100%;
+    margin-top: 64px;;
+}
+
+.needs__container {
+    display: flex;
+    align-items: center;
+    gap: 160px;
+}
+
+.needs_title {
+    font-family: 'New York Extra Large';
+    font-weight: 700;
+    font-size: 48px;
+    width: 90%;
+    line-height: 60px;
+}
+
+.second__desc {
+    font-size: 16px;
+    max-width: 305px;
+}
+
+.subtitle {
+    font-size: 16px;
+    font-family: 'SF UI Display Regular';
+}
+
+
+.needs_img {
+    margin-top: 40px;
+}
+
+.second__review {
+    display: flex;
+    gap: 40px;
+    margin-top: 48px;
+}
+
+.review_text {
+    font-family: 'SF UI Display Regular';
+}
+
+.cons {
+    display: inline-block;
+}
+
+.quotes {
+    display: block;
+    width: 100%;
+    height: 588px;
+    margin-top: 76px;
+}
+
+.quotes__title {
+    font-size: 48px;
+    width: 30%;
+}
+
+.quotes-img {
+    margin-top: 72px;
+}
+
+.realize {
+    width: 100%;
+    margin-top: 64px;
+}
+
+.realize_content {
+    display: flex;
+    align-items: center;
+    gap: 123px;
+}
+
+.real_title {
+    width: 60%;
+    font-family: 'New York Extra Large Bold';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+}
+
+.cons {
+    max-width: 204px;
+    font-size: 14px;
+}
+
+.partners {
+    margin-top: 64px;
+    width: 100%;
+}
+
+.part_title {
+    font-family: 'New York Extra Large Bold';
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 40px;
+}
+
+.partners__logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 666px;
+    height: 100px;
+    gap: 100px
+}
+
+.footer__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #F0F0F0;
+    margin-top: 64px;
+}
+
+.elems {
+    margin: 84px 0;
+    margin-left: 137px;
+    display: flex;
+    gap: 48px;
+}
+
+.elem {
+    text-decoration: none;
+}
+
+
